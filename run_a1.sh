@@ -8,8 +8,9 @@ f="readme.txt"
 exp="NoExp"
 r="r3"
 l="r1+r2"
+g=".git"
 for file in `ls`;do
-    if [ $file != $a -a $file != $b -a $file != $c -a $file != $d -a $file != $e -a $file != $f ]
+    if [ $file != $a -a $file != $b -a $file != $c -a $file != $d -a $file != $e -a $file != $f $file != $g ]
     then
         cd $file
         for i in 1 2 3 4 5 6 7 8 9 10; do
